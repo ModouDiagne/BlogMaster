@@ -5,7 +5,7 @@ const UserList = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get('/api/users').then(response => {
+        axios.get('/users').then(response => {
             setUsers(response.data);
         });
     }, []);

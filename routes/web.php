@@ -17,7 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route de capture tout pour React
-
-
-Route::resource('users',  App\Http\Controllers\UserController::class);
+Route::resource('users', UserController::class);
